@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-label="Profile summary card">
+
+<defs>
+  <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#1a1a1a"/>
+    <stop offset="55%" stop-color="#1e1e1e"/>
+    <stop offset="100%" stop-color="#141414"/>
+  </linearGradient>
+  <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#E65729" stop-opacity="0.2"/>
+    <stop offset="50%" stop-color="#E65729" stop-opacity="1"/>
+    <stop offset="100%" stop-color="#E65729" stop-opacity="0.2"/>
+  </linearGradient>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+    <feMerge>
+      <feMergeNode in="coloredBlur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <style>
+    .title { font-family: "Space Grotesk", "Orbitron", "Rajdhani", Arial, sans-serif; font-weight: 700; fill: #ffffff; }
+    .label { font-family: "Space Grotesk", "Orbitron", "Rajdhani", Arial, sans-serif; fill: #cfcfcf; }
+    .muted { fill: #8f8f8f; }
+    .grid { stroke: #ffffff; stroke-opacity: 0.08; stroke-width: 1; }
+    .glow { filter: url(#glow); }
+    .pulse { animation: pulse 3.6s ease-in-out infinite; }
+    .dash { stroke-dasharray: 8 14; animation: dash 10s linear infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 0.65; } 50% { opacity: 1; } }
+    @keyframes dash { to { stroke-dashoffset: -220; } }
+  </style>
+</defs>
+
+<rect width="100%" height="100%" fill="url(#bgGrad)" rx="16" ry="16"/>
+<rect x="12" y="12" width="1176" height="196" fill="#151515" rx="12" ry="12" opacity="0.85"/>
+<text x="28" y="40" class="title" font-size="20">Caique</text>
+<text x="28" y="64" class="label" font-size="12" opacity="0.75">@DonatoReis</text>
+<line x1="28" y1="82" x2="1172" y2="82" class="grid"/>
+<text x="28" y="118" class="label" font-size="12">Location</text>
+<text x="28" y="140" class="title" font-size="16">Brazil</text>
+<text x="560.0" y="118" class="label" font-size="12">Joined</text>
+<text x="560.0" y="140" class="title" font-size="16">Nov 01, 2021</text>
+<text x="920" y="118" class="label" font-size="12">Public Repos</text>
+<text x="920" y="140" class="title" font-size="16">16</text>
+<text x="1060" y="118" class="label" font-size="12">Contrib To</text>
+<text x="1060" y="140" class="title" font-size="16">7</text>
+<line x1="28" y1="180" x2="1172" y2="180" stroke="url(#accentGrad)" stroke-width="1.2" class="dash"/>
+</svg>

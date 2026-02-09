@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="260" viewBox="0 0 580 260" role="img" aria-label="Top languages card">
+
+<defs>
+  <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#1a1a1a"/>
+    <stop offset="55%" stop-color="#1e1e1e"/>
+    <stop offset="100%" stop-color="#141414"/>
+  </linearGradient>
+  <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#E65729" stop-opacity="0.2"/>
+    <stop offset="50%" stop-color="#E65729" stop-opacity="1"/>
+    <stop offset="100%" stop-color="#E65729" stop-opacity="0.2"/>
+  </linearGradient>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+    <feMerge>
+      <feMergeNode in="coloredBlur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <style>
+    .title { font-family: "Space Grotesk", "Orbitron", "Rajdhani", Arial, sans-serif; font-weight: 700; fill: #ffffff; }
+    .label { font-family: "Space Grotesk", "Orbitron", "Rajdhani", Arial, sans-serif; fill: #cfcfcf; }
+    .muted { fill: #8f8f8f; }
+    .grid { stroke: #ffffff; stroke-opacity: 0.08; stroke-width: 1; }
+    .glow { filter: url(#glow); }
+    .pulse { animation: pulse 3.6s ease-in-out infinite; }
+    .dash { stroke-dasharray: 8 14; animation: dash 10s linear infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 0.65; } 50% { opacity: 1; } }
+    @keyframes dash { to { stroke-dashoffset: -220; } }
+  </style>
+</defs>
+
+<rect width="100%" height="100%" fill="url(#bgGrad)" rx="16" ry="16"/>
+<rect x="12" y="12" width="556" height="236" fill="#151515" rx="12" ry="12" opacity="0.85"/>
+<text x="28" y="36" class="title" font-size="18">Top Languages</text>
+<rect x="28" y="86" width="524" height="16" fill="#0f0f0f" rx="8" ry="8"/>
+<rect x="28" y="86" width="204" height="16" fill="#663399" rx="8" ry="8" opacity="0.9"/>
+<rect x="232" y="86" width="143" height="16" fill="#3572A5" rx="8" ry="8" opacity="0.9"/>
+<rect x="375" y="86" width="62" height="16" fill="#3178c6" rx="8" ry="8" opacity="0.9"/>
+<rect x="437" y="86" width="48" height="16" fill="#e34c26" rx="8" ry="8" opacity="0.9"/>
+<rect x="485" y="86" width="30" height="16" fill="#f0c040" rx="8" ry="8" opacity="0.9"/>
+<rect x="515" y="86" width="26" height="16" fill="#89e051" rx="8" ry="8" opacity="0.9"/>
+<rect x="541" y="86" width="2" height="16" fill="#dea584" rx="8" ry="8" opacity="0.9"/>
+<rect x="543" y="86" width="9" height="16" fill="#f1e05a" rx="8" ry="8" opacity="0.9"/>
+<circle cx="28" cy="126" r="5" fill="#663399" />
+<text x="40" y="130" class="label" font-size="12">CSS 39.2%</text>
+<circle cx="28" cy="158" r="5" fill="#3572A5" />
+<text x="40" y="162" class="label" font-size="12">Python 27.6%</text>
+<circle cx="28" cy="190" r="5" fill="#3178c6" />
+<text x="40" y="194" class="label" font-size="12">TypeScript 12.2%</text>
+<circle cx="300.0" cy="126" r="5" fill="#e34c26" />
+<text x="312.0" y="130" class="label" font-size="12">HTML 9.5%</text>
+<circle cx="300.0" cy="158" r="5" fill="#f0c040" />
+<text x="312.0" y="162" class="label" font-size="12">Smarty 6.0%</text>
+<circle cx="300.0" cy="190" r="5" fill="#89e051" />
+<text x="312.0" y="194" class="label" font-size="12">Shell 5.2%</text>
+<line x1="28" y1="220" x2="552" y2="220" stroke="url(#accentGrad)" stroke-width="1.2" class="dash"/>
+</svg>

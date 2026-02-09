@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-label="Tech stack card">
+
+<defs>
+  <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#1a1a1a"/>
+    <stop offset="55%" stop-color="#1e1e1e"/>
+    <stop offset="100%" stop-color="#141414"/>
+  </linearGradient>
+  <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#E65729" stop-opacity="0.2"/>
+    <stop offset="50%" stop-color="#E65729" stop-opacity="1"/>
+    <stop offset="100%" stop-color="#E65729" stop-opacity="0.2"/>
+  </linearGradient>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+    <feMerge>
+      <feMergeNode in="coloredBlur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <style>
+    .title { font-family: "Space Grotesk", "Orbitron", "Rajdhani", Arial, sans-serif; font-weight: 700; fill: #ffffff; }
+    .label { font-family: "Space Grotesk", "Orbitron", "Rajdhani", Arial, sans-serif; fill: #cfcfcf; }
+    .muted { fill: #8f8f8f; }
+    .grid { stroke: #ffffff; stroke-opacity: 0.08; stroke-width: 1; }
+    .glow { filter: url(#glow); }
+    .pulse { animation: pulse 3.6s ease-in-out infinite; }
+    .dash { stroke-dasharray: 8 14; animation: dash 10s linear infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 0.65; } 50% { opacity: 1; } }
+    @keyframes dash { to { stroke-dashoffset: -220; } }
+  </style>
+</defs>
+
+<rect width="100%" height="100%" fill="url(#bgGrad)" rx="16" ry="16"/>
+<rect x="12" y="12" width="1176" height="196" fill="#151515" rx="12" ry="12" opacity="0.85"/>
+<text x="28" y="38" class="title" font-size="18">Tech Stack (top languages)</text>
+<rect x="28" y="70" width="120" height="28" fill="#101010" stroke="#663399" stroke-opacity="0.6" rx="10" ry="10"/>
+<circle cx="42" cy="84" r="5" fill="#663399"/>
+<text x="54" y="89" class="label" font-size="12">CSS 39.2%</text>
+<rect x="158" y="70" width="120" height="28" fill="#101010" stroke="#3572A5" stroke-opacity="0.6" rx="10" ry="10"/>
+<circle cx="172" cy="84" r="5" fill="#3572A5"/>
+<text x="184" y="89" class="label" font-size="12">Python 27.6%</text>
+<rect x="288" y="70" width="120" height="28" fill="#101010" stroke="#3178c6" stroke-opacity="0.6" rx="10" ry="10"/>
+<circle cx="302" cy="84" r="5" fill="#3178c6"/>
+<text x="314" y="89" class="label" font-size="12">TypeScript 12.2%</text>
+<rect x="418" y="70" width="120" height="28" fill="#101010" stroke="#e34c26" stroke-opacity="0.6" rx="10" ry="10"/>
+<circle cx="432" cy="84" r="5" fill="#e34c26"/>
+<text x="444" y="89" class="label" font-size="12">HTML 9.5%</text>
+<rect x="548" y="70" width="120" height="28" fill="#101010" stroke="#f0c040" stroke-opacity="0.6" rx="10" ry="10"/>
+<circle cx="562" cy="84" r="5" fill="#f0c040"/>
+<text x="574" y="89" class="label" font-size="12">Smarty 6.0%</text>
+<rect x="678" y="70" width="120" height="28" fill="#101010" stroke="#89e051" stroke-opacity="0.6" rx="10" ry="10"/>
+<circle cx="692" cy="84" r="5" fill="#89e051"/>
+<text x="704" y="89" class="label" font-size="12">Shell 5.2%</text>
+<rect x="808" y="70" width="120" height="28" fill="#101010" stroke="#dea584" stroke-opacity="0.6" rx="10" ry="10"/>
+<circle cx="822" cy="84" r="5" fill="#dea584"/>
+<text x="834" y="89" class="label" font-size="12">Rust 0.2%</text>
+<rect x="938" y="70" width="120" height="28" fill="#101010" stroke="#f1e05a" stroke-opacity="0.6" rx="10" ry="10"/>
+<circle cx="952" cy="84" r="5" fill="#f1e05a"/>
+<text x="964" y="89" class="label" font-size="12">JavaScript 0.0%</text>
+<line x1="28" y1="180" x2="1172" y2="180" stroke="url(#accentGrad)" stroke-width="1.2" class="dash"/>
+</svg>

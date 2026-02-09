@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="260" viewBox="0 0 580 260" role="img" aria-label="GitHub stats card">
+
+<defs>
+  <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#1a1a1a"/>
+    <stop offset="55%" stop-color="#1e1e1e"/>
+    <stop offset="100%" stop-color="#141414"/>
+  </linearGradient>
+  <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#E65729" stop-opacity="0.2"/>
+    <stop offset="50%" stop-color="#E65729" stop-opacity="1"/>
+    <stop offset="100%" stop-color="#E65729" stop-opacity="0.2"/>
+  </linearGradient>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+    <feMerge>
+      <feMergeNode in="coloredBlur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <style>
+    .title { font-family: "Space Grotesk", "Orbitron", "Rajdhani", Arial, sans-serif; font-weight: 700; fill: #ffffff; }
+    .label { font-family: "Space Grotesk", "Orbitron", "Rajdhani", Arial, sans-serif; fill: #cfcfcf; }
+    .muted { fill: #8f8f8f; }
+    .grid { stroke: #ffffff; stroke-opacity: 0.08; stroke-width: 1; }
+    .glow { filter: url(#glow); }
+    .pulse { animation: pulse 3.6s ease-in-out infinite; }
+    .dash { stroke-dasharray: 8 14; animation: dash 10s linear infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 0.65; } 50% { opacity: 1; } }
+    @keyframes dash { to { stroke-dashoffset: -220; } }
+  </style>
+</defs>
+
+<rect width="100%" height="100%" fill="url(#bgGrad)" rx="16" ry="16"/>
+<rect x="12" y="12" width="556" height="236" fill="#151515" rx="12" ry="12" opacity="0.85"/>
+<text x="28" y="36" class="title" font-size="18">Core Stats</text>
+<text x="28" y="54" class="label" font-size="11" opacity="0.7">Last 365 days</text>
+<text x="28" y="70" class="label" font-size="12" opacity="0.8">Stars</text>
+<text x="28" y="92" class="title" font-size="18">148</text>
+<text x="300.0" y="70" class="label" font-size="12" opacity="0.8">Commits</text>
+<text x="300.0" y="92" class="title" font-size="18">71</text>
+<text x="28" y="110" class="label" font-size="12" opacity="0.8">PRs</text>
+<text x="28" y="132" class="title" font-size="18">2</text>
+<text x="300.0" y="110" class="label" font-size="12" opacity="0.8">Issues</text>
+<text x="300.0" y="132" class="title" font-size="18">2</text>
+<text x="28" y="150" class="label" font-size="12" opacity="0.8">Reviews</text>
+<text x="28" y="172" class="title" font-size="18">1</text>
+<text x="300.0" y="150" class="label" font-size="12" opacity="0.8">Repos</text>
+<text x="300.0" y="172" class="title" font-size="18">16</text>
+<text x="28" y="190" class="label" font-size="12" opacity="0.8">Followers</text>
+<text x="28" y="212" class="title" font-size="18">35</text>
+<line x1="28" y1="220" x2="552" y2="220" stroke="url(#accentGrad)" stroke-width="1.2" class="dash"/>
+</svg>
